@@ -139,6 +139,9 @@ img {
     transform: translateY(15%);
 
   }
+  .hero-image{
+    background-position: center 70vh;
+  }
 }
 
 
