@@ -145,7 +145,8 @@ img {
 
   }
   .hero-image{
-    background-position: center 70vh;
+    background-position: center ;
+    background-size: 150px 300px;
   }
 }
 
