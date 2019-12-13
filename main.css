@@ -58,6 +58,10 @@ animation-iteration-count: 4
   font-size: 20px;
 }
 
+.mid p:nth-child(2){
+  color: #ffffff;
+}
+
 .bottom {
   position: absolute;
   bottom: 0;
@@ -65,25 +69,6 @@ animation-iteration-count: 4
   /* background-color: white; */
 }
 
-@media only screen and (max-width: 1024px) {
-  .bottom {
-    /* transform: translateY(188%); */
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .bottom {
-    transform: translateY(15%);
-    font-size: 7px;
-  }
-}
-
-@media only screen and (max-height: 375px) {
-  .bottom {
-    transform: translateY(15%);
-
-  }
-}
 
 .hero-text>h1 {
   margin: 0 0 25vh 0;
@@ -102,6 +87,33 @@ img {
   width: 35vh;
 }
 
+
+
+
+@media only screen and (max-width: 750px) {
+
+  .hero-text>h1 {
+    margin-bottom: 10vh;
+  }
+ 
+  .bottom {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .bottom {
+    transform: translateY(15%);
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-height: 375px) {
+  .bottom {
+    transform: translateY(15%);
+
+  }
+}
 
 
 @media (orientation: landscape) {
