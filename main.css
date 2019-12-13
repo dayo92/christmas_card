@@ -135,6 +135,9 @@ img {
 }
 
 @media only screen and (max-height: 375px) {
+  body{
+    overflow: scroll;
+  }
   .bottom {
     transform: translateY(15%);
 
