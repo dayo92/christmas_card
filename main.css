@@ -73,14 +73,14 @@ animation-iteration-count: 4
 
 @media only screen and (max-width: 414px) {
   .bottom {
-    /* transform: translateY(213%); */
+    transform: translateY(15%);
     font-size: 7px;
   }
 }
 
-@media only screen and (max-height: 568px) {
+@media only screen and (max-height: 375px) {
   .bottom {
-    /* transform: translateY(121%); */
+    transform: translateY(15%);
 
   }
 }
