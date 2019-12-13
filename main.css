@@ -18,11 +18,7 @@ body {
     bottom: 0 */
 }
 
-@media only screen and (max-width: 900px) {
-  .hero-image {
-    background-size: contain;
-  }
-}
+
 
 #santa{
   position: absolute;
@@ -98,7 +94,11 @@ img {
   height: 15%;
 }
 
-
+@media only screen and (max-width: 900px) {
+  .hero-image {
+    background-size: contain;
+  }
+}
 
 
 @media only screen and (max-width: 750px) {
@@ -118,6 +118,11 @@ img {
 @media only screen and (max-width: 500px) {
   #reindeer{
     display: none;
+  }
+
+  .mobile_top{
+    position: relative;
+    bottom: 10vh;
   }
  
 }
