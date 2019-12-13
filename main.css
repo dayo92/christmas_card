@@ -137,16 +137,16 @@ img {
 }
 
 @media only screen and (max-height: 375px) {
-  body{
+  /* body{
     overflow: scroll;
-  }
+  } */
   .bottom {
     transform: translateY(15%);
 
   }
   .hero-image{
     background-position: center ;
-    background-size: 150px 300px;
+    background-size: 150px 375px;
   }
 }
 
