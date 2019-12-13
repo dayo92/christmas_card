@@ -3,12 +3,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: none;
   max-width: 1599px;
+  overflow: hidden;
 }
 
 .hero-image {
   background-image: url("./img/SnowField.png");
   background-color: #274e9b;
-  height: 95vh;
+  /* height: 95vh; */
   max-width: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -23,6 +24,25 @@ body {
   }
 }
 
+#santa{
+  position: absolute;
+  right: -490px;
+  height: 20%;
+  width: auto;
+  z-index: 10;
+
+  animation-name: example;
+  animation-delay: 2s;
+animation-duration: 5s;
+animation-iteration-count: 4
+
+}
+
+@keyframes example {
+  0%   {right:-490px}
+ 
+  100% {right: 100%;}
+}
 
 
 .hero-text {
@@ -39,26 +59,28 @@ body {
 }
 
 .bottom {
-  transform: translateY(115%);
-  background-color: white;
+  position: absolute;
+  bottom: 0;
+  /* transform: translateY(115%); */
+  /* background-color: white; */
 }
 
 @media only screen and (max-width: 1024px) {
   .bottom {
-    transform: translateY(188%);
+    /* transform: translateY(188%); */
   }
 }
 
 @media only screen and (max-width: 414px) {
   .bottom {
-    transform: translateY(213%);
+    /* transform: translateY(213%); */
     font-size: 7px;
   }
 }
 
 @media only screen and (max-height: 568px) {
   .bottom {
-    transform: translateY(121%);
+    /* transform: translateY(121%); */
 
   }
 }
@@ -80,10 +102,22 @@ img {
   width: 35vh;
 }
 
+
+
+@media (orientation: landscape) {
+
+  .hero-image {
+    background-size: cover;
+    
+    
+  }
+}
+
+
 .snowflake {
   color: whitesmoke;
   text-shadow: 0 0 5px #000;
-  text-shadow: 1px 1px 2px, 0 0 25px blue;
+  text-shadow: 1px 1px 2px 25px blue;
 }
 
 @keyframes snowflakes-fall {
